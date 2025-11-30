@@ -1,0 +1,64 @@
+
+/* 09_Goichi_Akiba */
+
+
+/* Bodypart */
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightcyan;
+  margin: 20px;
+  text-align: center;
+}
+
+/* panel */
+.panel {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+  background: white;
+  border: 2px solid lightblue;
+}
+
+/* click & button */
+input {
+  padding: 5px;
+  width: 150px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 6px 12px;
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* button part 2 */
+button#summonButton {
+  background-color: lightgreen;
+  color: black;
+  border: none;
+}
+
+button#nextRoundButton {
+  background-color: lightpink;
+}
+
+/* status */
+#statusMessage {
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+/* monster display area */
+.monster-field {
+  min-height: 100px;
+  padding: 10px;
+  background-color: lightcyan;
+  border-radius: 10px;
+  border: 2px dashed cornflowerblue;
+  margin-top: 10px;
+}
