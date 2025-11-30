@@ -1,0 +1,70 @@
+
+<!-- 09_Goichi_Akiba -->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- １．タイトル画面 -->
+  <title>モンスター召喚チャレンジ (09_Goichi_Akiba) </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="monster_goichi.css">
+</head>
+<body>
+
+  <main class="game">
+    <h1 class="game__title">モンスター召喚チャレンジ 👾</h1>
+    <p class="game__description">
+      表示されたモンスターに向かって、勇者たちを召喚して全部倒そう！
+    </p>
+
+    <!-- ２．操作エリア -->
+    <section class="panel panel--control">
+      <div class="panel__inner">
+
+        <p id="targetText" class="panel__target">ターゲット読込中...</p>
+
+        <div class="panel__input-group">
+          <label for="monsterCountInput" class="panel__label">
+            召喚する勇者の数：
+          </label>
+
+          <input
+            id="monsterCountInput"
+            type="number"
+            min="1"
+            max="40"
+            class="panel__input"
+          >
+
+          <button id="summonButton" class="button button--primary">
+            召喚！
+          </button>
+        </div>
+
+        <p id="statusMessage" class="status status--info">
+          勇者の人数を入力して「召喚！」を押してね！
+        </p>
+      </div>
+    </section>
+
+
+    <!-- ３. 遊び方の紹介 -->
+    <section class="panel panel--notes">
+      <div class="panel__inner">
+        <h2 class="panel__subtitle">遊び方の紹介：</h2>
+        <ul class="rules">
+          <li>ターゲットのモンスターの数は 3〜8 体のあいだでランダムです。</li>
+          <li>👾 のモンスターは勇者 <strong>1人</strong> で倒せます。</li>
+          <li>🧟 のモンスターは勇者 <strong>2人</strong> で倒せます。</li>
+          <li>ちょうど倒せる勇者の人数を考えて「召喚！」を押しましょう。</li>
+          <li>正解すると、次のモンスターたちが出てきます！続けて倒してね！</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="monster_goichi.js"></script>
+</body>
+</html>
